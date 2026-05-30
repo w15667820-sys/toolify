@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f3f6fb;
+  color: #0f172a;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #0a0f1c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.logo {
+  font-family: "Fustat", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 0px 100px;
+}
+
+.navbar nav a {
+  color: #cbd5e1;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+  padding: 15px;
+}
+
+.navbar nav a:hover {
+  color: #60a5fa;
+}
+
+/* =========================
+RUNWAY AI ARTICLE PAGE
+========================= */
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.runway-hero {
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.runway-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, .15);
+    padding: 8px 16px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    font-size: .9rem;
+    backdrop-filter: blur(6px);
+}
+
+.runway-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.runway-hero p {
+    max-width: 700px;
+    margin: auto;
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.runway-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* =========================
+   ARTICLE CARD
+========================= */
+
+.runway-card {
+  background: #ffffff;
+  margin-top: -40px;
+  margin-bottom: 60px;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+.runway-card h2 {
+  margin-top: 35px;
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+  color: #0f172a;
+  position: relative;
+}
+
+.runway-card h2::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 3px;
+  background: #2563eb;
+  margin-top: 6px;
+  border-radius: 5px;
+}
+
+.runway-card h3 {
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.runway-card p {
+  margin-bottom: 15px;
+  color: #475569;
+  font-size: 1rem;
+}
+
+.runway-card ul {
+  margin: 15px 0 20px 25px;
+}
+
+.runway-card li {
+  margin-bottom: 10px;
+  color: #475569;
+}
+
+/* =========================
+   PROS / CONS GRID
+========================= */
+
+.runway-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* =========================
+   BOX DESIGN
+========================= */
+
+.runway-box {
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  transition: 0.3s ease;
+}
+
+.runway-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+/* PROS */
+
+.runway-pros {
+  border-left: 5px solid #22c55e;
+}
+
+.runway-pros h3 {
+  color: #16a34a;
+}
+
+/* CONS */
+
+.runway-cons {
+  border-left: 5px solid #ef4444;
+}
+
+.runway-cons h3 {
+  color: #dc2626;
+}
+
+/* =========================
+   FAQ SECTION
+========================= */
+
+.runway-card h3 {
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.runway-card h3 + p {
+  margin-top: 5px;
+}
+
+/* =========================
+   OPTIONAL AD BLOCK (for future ads)
+========================= */
+
+.ad-box {
+  background: #eef2ff;
+  border: 2px dashed #6366f1;
+  padding: 25px;
+  text-align: center;
+  margin: 30px 0;
+  border-radius: 12px;
+  color: #4f46e5;
+}
+
+
+
+/* FOOTER */
+footer {
+  background: #0a0f1c;
+  color: #94a3b8;
+  text-align: center;
+  padding: 30px;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+
+/* =========================
+   MODERN HAMBURGER MENU (FINAL CLEAN VERSION)
+========================= */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #ffffff;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  margin-top: 8px;
+}
+
+/* DESKTOP NAV */
+#nav-menu {
+  display: flex;
+  gap: 15px;
+}
+
+/* MOBILE NAV */
+@media (max-width: 768px) {
+
+    .logo{
+
+    padding: 0px 0px;
+   }
+
+    .runway-hero h1 { font-size: 2rem; } 
+    .runway-card { padding: 25px; } 
+    .runway-grid { grid-template-columns: 1fr; }
+
+  .hamburger {
+    display: flex;
+  }
+
+  #nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+
+    background: rgba(10, 15, 28, 0.95);
+    backdrop-filter: blur(12px);
+
+    flex-direction: column;
+
+    opacity: 0;
+    transform: translateY(-15px);
+    pointer-events: none;
+
+    transition: all 0.35s ease;
+
+    padding: 20px 0;
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  }
+
+  #nav-menu.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  #nav-menu a {
+    padding: 14px;
+    display: block;
+    color: #cbd5e1;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+
+  #nav-menu a:hover {
+    color: #60a5fa;
+    background: rgba(255,255,255,0.05);
+  }
+}
+
+
+
+
