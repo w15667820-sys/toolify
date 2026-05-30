@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap (VERY IMPORTANT FOR SEO)
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://w15667820-sys.github.io/toolify/sitemap.xml
